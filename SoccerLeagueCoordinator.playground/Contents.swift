@@ -139,7 +139,7 @@ var skilledPlayers = [[String: Any]] ()
 var newPlayers = [[String: Any]] ()
 
 for player in players {
-    // This loop appends any dictionary from the players array that has soccer experience to the skilledPlayers array.
+    // This loop appends any dictionary from the players array that has soccer experience to the skilledPlayers array, and any that doesn't to the newPlayers array.
     var experience: Bool = player ["Soccer Experience"] as! Bool
     if experience == true {
         skilledPlayers.append(player)
